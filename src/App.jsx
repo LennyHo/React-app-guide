@@ -28,6 +28,10 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = expense => {
+    console.log('sucessfully pass the in app.js!');
+    console.log(expenses);
+  };
   /*
 In detail:
 Create a new component that is responsible for displaying expenses
@@ -37,7 +41,7 @@ Keep the expenses data in the App component and pass that data into the newly cr
 
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       {/* uppercase indicates */}
       <Expenses items={expenses} />
     </div>
