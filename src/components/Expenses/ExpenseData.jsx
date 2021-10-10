@@ -4,6 +4,7 @@ import ExpenseItem from "../Expenses/ExpenseItem";
 import "../Expenses/ExpenseItem.css";
 
 const ExpenseData = (props) => {
+  console.log(props);
   // 1 root JSX ELEMENT === <div>
   // remember to put in a (<div></div>)
   return (

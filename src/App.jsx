@@ -1,5 +1,7 @@
 import Expenses from "./components/Expenses/ExpenseData";
 
+import NewExpense from "./components/NewExpense/NewExpense";
+
 const App = () => {
   const expenses = [
     {
@@ -35,7 +37,7 @@ Keep the expenses data in the App component and pass that data into the newly cr
 
   return (
     <div>
-      <h2>Let's get started</h2>
+      <NewExpense />
       {/* uppercase indicates */}
       <Expenses items={expenses} />
     </div>
