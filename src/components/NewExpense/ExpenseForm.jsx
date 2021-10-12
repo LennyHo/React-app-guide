@@ -8,6 +8,7 @@ const ExpenseForm = (props) => {
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
+  
   //   const [userinput, setUserInput] = useState({
   //     enteredTitle: "",
   //     EnteredAmount: "",
@@ -80,6 +81,7 @@ const ExpenseForm = (props) => {
             onChange={titleChangeHandler}
           />
         </div>
+
         <div className="new-expense__control">
           <label>Amount</label>
           <input

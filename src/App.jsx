@@ -18,7 +18,7 @@ const App = () => {
       title: "Care Insurance",
       amount: 294.67,
       date: new Date(2021, 2, 28),
-    },
+    }, 
 
     {
       id: "e4",
@@ -28,8 +28,8 @@ const App = () => {
     },
   ];
 
-  const addExpenseHandler = expense => {
-    console.log('sucessfully pass the in app.js!');
+  const addExpenseHandler = (expenses) => {
+    console.log("sucessfully pass the in app.js!");
     console.log(expenses);
   };
   /*
@@ -41,7 +41,7 @@ Keep the expenses data in the App component and pass that data into the newly cr
 
   return (
     <div>
-      <NewExpense onAddExpense={addExpenseHandler}/>
+      <NewExpense onAddExpense={addExpenseHandler} />
       {/* uppercase indicates */}
       <Expenses items={expenses} />
     </div>
